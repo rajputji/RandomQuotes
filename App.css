@@ -95,7 +95,7 @@ body {
   opacity: 0.9;
 }
 
-#tweet-quote, #tumblr-quote {
+#tweet-quote {
   float: left;
   padding: 0px;
   padding-top: 8px;
@@ -108,4 +108,23 @@ body {
 
 #new-quote {
   float: right;
+}
+
+@media only screen and (max-width: 768px) {
+  #quote-box{
+    width: 80%;
+    margin: 0;
+    padding: 5% 5% 5% 15%;
+  }
+  #quote-box > .quote-text{
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  #quote-box > .quote-author{
+    width: auto;
+  }
+  #quote-box > .buttons{
+    width: auto;
+  }
 }
